@@ -13,7 +13,7 @@ from wordcloud import WordCloud
 st.markdown("<h1 style='text-align: center; font-weight: bold;'>🧑‍💻 Exploring Language Trends: A Feature-Based Popularity Analysiss 📊</h1>", unsafe_allow_html=True)
 file_path = "C:/Users/Jhotika Raja/Downloads/dpel/data_cleaned.csv"
 try:
-    df = pd.read_csv(file_path)
+    df = pd.read_csv("C:/Users/Jhotika Raja/Downloads/dpel/data_cleaned.csv")
 except FileNotFoundError:
     st.error(f"File not found at the specified path: {file_path}. Please check the path and try again.")
     st.stop()
