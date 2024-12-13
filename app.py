@@ -13,11 +13,14 @@ from wordcloud import WordCloud
 import os
 st.markdown("<h1 style='text-align: center; font-weight: bold;'>🧑‍💻 Exploring Language Trends: A Feature-Based Popularity Analysiss 📊</h1>", unsafe_allow_html=True)
 file_path = 'C:/Users/Jhotika Raja/Downloads/dpel/data_cleaned.csv'
+df = None
 try:
     df = pd.read_csv(file_path)
-    print("File loaded successfully.")
+    st.success("Dataset loaded successfully.")
 except FileNotFoundError:
-    print("File not found at the specified path:", file_path)
+    st.error(f"Dataset not found at {file_path}. Please ensure the file exists and is accessible.")
+except Exception as e:
+    st.error(f"An error occurred while loading the dataset: {str(e)}")
 options = st.selectbox("Choose an Option", ["Choose an Option", "📉 Handle Missing Values", "🔍 Explore Dataset", "📊 Exploratory Data Analysis","💡 Top Language Suggestions"])
 if options == "📉 Handle Missing Values":
     st.header("🧹 Let's Look at Handling Missing Values")
