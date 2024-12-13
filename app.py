@@ -12,7 +12,7 @@ from sklearn.decomposition import PCA
 from wordcloud import WordCloud
 import os
 st.markdown("<h1 style='text-align: center; font-weight: bold;'>🧑‍💻 Exploring Language Trends: A Feature-Based Popularity Analysiss 📊</h1>", unsafe_allow_html=True)
-file_path = 'C:\Users\Jhotika Raja\Downloads\dpel\data_cleaned.csv'
+file_path = 'C:/Users/Jhotika Raja/Downloads/dpel/data_cleaned.csv'
 try:
     df = pd.read_csv(file_path)
     print("File loaded successfully.")
