@@ -1,3 +1,8 @@
+numpy==1.26.4
+lxml==5.3.0
+nwsapy==1.0.3
+folium==0.19.1
+streamlit-folium==0.23.2
 streamlit==1.39.0
 pandas==2.2.2
 numpy==1.26.4
