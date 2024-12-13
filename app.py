@@ -13,7 +13,7 @@ from wordcloud import WordCloud
 from pathlib import Path
 import os
 st.markdown("<h1 style='text-align: center; font-weight: bold;'>🧑‍💻 Exploring Language Trends: A Feature-Based Popularity Analysiss 📊</h1>", unsafe_allow_html=True)
-file_path = 'C:/Users/Jhotika Raja/OneDrive/Desktop/data_cleaned.csv'
+file_path = "C:/Users/Jhotika Raja/Downloads/dpel/data_cleaned.csv"
 df = None
 try:
     df = pd.read_csv(file_path)
